@@ -432,12 +432,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_B_15
+      name: BarTable2
       rect:
         serializedVersion: 2
         x: 0
         y: 448
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1692,12 +1692,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_B_75
+      name: LibraryCouch
       rect:
         serializedVersion: 2
         x: 384
         y: 352
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2595,7 +2595,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_B_118
+      name: PatioFlowerTable
       rect:
         serializedVersion: 2
         x: 224
@@ -2826,7 +2826,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_B_129
+      name: PatioTable
       rect:
         serializedVersion: 2
         x: 64
@@ -2868,12 +2868,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_B_131
+      name: StudioTable
       rect:
         serializedVersion: 2
         x: 128
         y: 224
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3167,7 +3167,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 192
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3208,7 +3208,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 192
+        y: 191
         width: 32
         height: 32
       alignment: 0
@@ -3498,7 +3498,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_B_161
+      name: StudioChair
       rect:
         serializedVersion: 2
         x: 64
@@ -4863,7 +4863,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_B_226
+      name: PatioChair1
       rect:
         serializedVersion: 2
         x: 96
@@ -4884,7 +4884,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_B_227
+      name: PatioChair2
       rect:
         serializedVersion: 2
         x: 128
@@ -5262,12 +5262,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_B_245
+      name: BarTable
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -5482,6 +5482,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      BarTable: 1957650921
+      BarTable2: -1552232667
       Front_Couch: 958223479
       Inside_B_0: -1348038960
       Inside_B_1: 2141787614
@@ -5505,7 +5507,6 @@ TextureImporter:
       Inside_B_115: -138229213
       Inside_B_116: -262668593
       Inside_B_117: 1302704203
-      Inside_B_118: -503084563
       Inside_B_119: -1818582378
       Inside_B_12: -514688734
       Inside_B_120: -409046715
@@ -5517,10 +5518,8 @@ TextureImporter:
       Inside_B_126: 1852548660
       Inside_B_127: 1730955483
       Inside_B_128: -968226816
-      Inside_B_129: -439571306
       Inside_B_13: 2006417730
       Inside_B_130: -368509692
-      Inside_B_131: 1138725921
       Inside_B_132: -1578903632
       Inside_B_133: 149392750
       Inside_B_134: 836512016
@@ -5540,7 +5539,6 @@ TextureImporter:
       Inside_B_147: 885055051
       Inside_B_148: -1193980112
       Inside_B_149: -1384541252
-      Inside_B_15: -1552232667
       Inside_B_150: 1657746307
       Inside_B_151: -1207404201
       Inside_B_152: -599564696
@@ -5552,7 +5550,6 @@ TextureImporter:
       Inside_B_158: -1247845061
       Inside_B_159: -1186554326
       Inside_B_16: -1253973803
-      Inside_B_161: 2084366032
       Inside_B_162: -2140084636
       Inside_B_163: 892790683
       Inside_B_164: 516547208
@@ -5623,8 +5620,6 @@ TextureImporter:
       Inside_B_223: -1143255705
       Inside_B_224: -772218960
       Inside_B_225: -1907243487
-      Inside_B_226: 1609454959
-      Inside_B_227: 868193076
       Inside_B_228: 1676664722
       Inside_B_229: -2051685743
       Inside_B_23: -47849872
@@ -5644,7 +5639,6 @@ TextureImporter:
       Inside_B_242: -1021019554
       Inside_B_243: 1841245806
       Inside_B_244: -1042277909
-      Inside_B_245: 1957650921
       Inside_B_246: 1247357639
       Inside_B_247: -1586827015
       Inside_B_248: 1894862213
@@ -5708,7 +5702,6 @@ TextureImporter:
       Inside_B_72: -1786040474
       Inside_B_73: -1567742371
       Inside_B_74: 913783312
-      Inside_B_75: 937147757
       Inside_B_76: -1698765212
       Inside_B_77: -2141415281
       Inside_B_78: -1204185408
@@ -5736,7 +5729,14 @@ TextureImporter:
       Inside_B_98: 1125588763
       Inside_B_99: 1404751104
       Left_Chair: -1997115273
+      LibraryCouch: 937147757
+      PatioChair1: 1609454959
+      PatioChair2: 868193076
+      PatioFlowerTable: -503084563
+      PatioTable: -439571306
       Right_Chair: -1151762530
+      StudioChair: 2084366032
+      StudioTable: 1138725921
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

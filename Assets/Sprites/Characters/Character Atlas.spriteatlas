@@ -45,24 +45,46 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 80f12cfab41f444a7b692c436507b8fd, type: 3}
+    - {fileID: 2800000, guid: 3654d8000763b4f8aade80d90f313629, type: 3}
+    - {fileID: 2800000, guid: 54a04a89df8c043c1ad6b8d41ab93308, type: 3}
+    - {fileID: 2800000, guid: df61ac0dc48a54f44b5d62afed819e03, type: 3}
+    - {fileID: 2800000, guid: 11c5d9e2adf8f4be1b516ba488d9abd8, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: -1755949944, guid: 3654d8000763b4f8aade80d90f313629, type: 3}
+  - {fileID: -763252117, guid: 3654d8000763b4f8aade80d90f313629, type: 3}
+  - {fileID: 1130114600, guid: 3654d8000763b4f8aade80d90f313629, type: 3}
+  - {fileID: -182342040, guid: 3654d8000763b4f8aade80d90f313629, type: 3}
+  - {fileID: -487846614, guid: 3654d8000763b4f8aade80d90f313629, type: 3}
+  - {fileID: 2140880305, guid: 3654d8000763b4f8aade80d90f313629, type: 3}
+  - {fileID: 21300000, guid: 11c5d9e2adf8f4be1b516ba488d9abd8, type: 3}
+  - {fileID: 21300000, guid: 54a04a89df8c043c1ad6b8d41ab93308, type: 3}
   - {fileID: -1978944530, guid: 80f12cfab41f444a7b692c436507b8fd, type: 3}
   - {fileID: -321602088, guid: 80f12cfab41f444a7b692c436507b8fd, type: 3}
   - {fileID: -365962109, guid: 80f12cfab41f444a7b692c436507b8fd, type: 3}
   - {fileID: 805690568, guid: 80f12cfab41f444a7b692c436507b8fd, type: 3}
   - {fileID: -1391522263, guid: 80f12cfab41f444a7b692c436507b8fd, type: 3}
   - {fileID: 552760416, guid: 80f12cfab41f444a7b692c436507b8fd, type: 3}
+  - {fileID: 21300000, guid: df61ac0dc48a54f44b5d62afed819e03, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Overworld Sprites - Outlined_5
+  - Overworld Sprites - Outlined_4
+  - Overworld Sprites - Outlined_3
+  - Overworld Sprites - Outlined_2
+  - Overworld Sprites - Outlined_1
+  - Overworld Sprites - Outlined_0
+  - '[Walk] 1'
+  - '[Walk] 3'
   - Overworld_Sprites_1
   - Overworld_Sprites_0
   - Overworld_Sprites_3
   - Overworld_Sprites_2
   - Overworld_Sprites_5
   - Overworld_Sprites_4
+  - '[Walk] 2 and 4'
   m_RenderDataMap: {}
   m_Tag: Character Atlas
   m_IsVariant: 0

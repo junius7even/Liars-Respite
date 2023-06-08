@@ -44,11 +44,14 @@ TagManager:
   - name: Ground
     uniqueID: 3122352027
     locked: 0
-  - name: Decorations
-    uniqueID: 2085627081
+  - name: GroundDecorations
+    uniqueID: 1747523601
     locked: 0
-  - name: Character
+  - name: Character&Furniture
     uniqueID: 357499445
+    locked: 0
+  - name: FrontFurniture
+    uniqueID: 3071840725
     locked: 0
   - name: Background
     uniqueID: 805006933
