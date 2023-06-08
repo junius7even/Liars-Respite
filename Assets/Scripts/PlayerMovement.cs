@@ -2,13 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IDataPersistance
 {
     public static bool IsInDialogue;
 
     public float MoveSpeedX = 5;
     public float MoveSpeedZ = 2;
     
+
+    public void LoadData(GameData data)
+    {
+        this.transform.position = data.playerPosition;
+
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.playerPosition = this.transform.position;
+    }
     // Start is called before the first frame update
     void Start()
     {
