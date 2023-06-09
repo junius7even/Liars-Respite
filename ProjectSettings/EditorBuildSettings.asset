@@ -4,5 +4,35 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: f34a139d760b8420fb25b2ae42995f8d
+  - enabled: 1
+    path: Assets/Scenes/Party Room.unity
+    guid: 92639cb1098a44bb2bcd08af956ecd02
+  - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: f63bc56bdc1b94fc0946cda18d0b8d6f
+  - enabled: 1
+    path: Assets/Scenes/Bar.unity
+    guid: abcf5193d316946b590fd28f5e598f82
+  - enabled: 1
+    path: Assets/Scenes/Library.unity
+    guid: 479320e0868794365943a96a477b20bf
+  - enabled: 1
+    path: Assets/Scenes/Locked Room.unity
+    guid: 8f3dbb08c3ba145408ab7a11abbbe64d
+  - enabled: 1
+    path: Assets/Scenes/Lounge.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Patio.unity
+    guid: 1f584d4b9d90f44949e1e87f7cabf886
+  - enabled: 1
+    path: Assets/Scenes/Storage.unity
+    guid: ad26affb801b8474a914f08a8c444c5c
+  - enabled: 1
+    path: Assets/Scenes/Studio.unity
+    guid: 52e45c61ec35f43c0937a02dcc09fc64
   m_configObjects: {}

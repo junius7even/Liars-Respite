@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 58cc99a5b7fe744458ce934e396d7bf6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Fortzilla
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c2c111c5d42814b1e8520883be577f65, type: 3}
+  - {fileID: 12800000, guid: e62b0dc3279994cd082a35abc048d38e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
