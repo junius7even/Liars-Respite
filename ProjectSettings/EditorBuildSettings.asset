@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: f34a139d760b8420fb25b2ae42995f8d
   - enabled: 1
+    path: Assets/Scenes/ColdOpen.unity
+    guid: ea4070e46011b4edaabb7c61fb504091
+  - enabled: 1
     path: Assets/Scenes/Party Room.unity
     guid: 92639cb1098a44bb2bcd08af956ecd02
   - enabled: 1

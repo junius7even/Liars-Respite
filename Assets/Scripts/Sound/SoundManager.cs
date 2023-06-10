@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
 
-    [SerializeField] private AudioSource _musicSource, _effectsSource;
+    [SerializeField] private AudioSource _musicSource, _effectsSource, _vaSource;
 
     void Awake()
     {
@@ -31,6 +31,15 @@ public class SoundManager : MonoBehaviour
     {
         
         _effectsSource.PlayOneShot(clip);
+    }
+
+    public void PlayVoiceOver(string character, string clipName)
+    {
+        AudioClip clip = Resources.Load<AudioClip>($"Sound/VA_s/{character}/{clipName}");
+        Debug.Log($"Sound/VA_s/{character}/{clipName}");
+        Debug.Log(clip);
+        _vaSource.clip = clip;
+        _vaSource.Play();
     }
 
     public void ChangeMasterVolume(float value)

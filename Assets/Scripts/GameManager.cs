@@ -8,9 +8,12 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 public class GameManager : MonoBehaviour
 {
+    [SerializeField]
     public static int ChapterNumber = 0; // 0 is cold open, rest is divided between acts
     public static string NextSceneName;
     private static GameManager _instance;
+
+    public static bool sceneChange;
     // Start is called before the first frame update
     public static GameManager Instance
     {
@@ -41,11 +44,19 @@ public class GameManager : MonoBehaviour
     private void HandleSceneTransitions()
     {
         if (SceneManager.GetActiveScene().name == "MainMenu")
+            SetNextSceneName("ColdOpen");
+        else if (SceneManager.GetActiveScene().name == "ColdOpen")
             SetNextSceneName("Party Room");
+        Debug.Log(GameManager.NextSceneName);
     }
 
     public void SetNextSceneName(string nextSceneName)
     {
         NextSceneName = nextSceneName;
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(NextSceneName);
     }
 }

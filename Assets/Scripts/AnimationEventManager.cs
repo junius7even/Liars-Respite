@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AnimationEventManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class AnimationEventManager : MonoBehaviour
     private GameManager gameManager;
     public AudioSource musicSource;
     public AudioSource effectsSource;
+    [Header("Ink JSON")][SerializeField] private TextAsset inkJSON;
     void Start()
     {
         gameManager = GameManager.Instance;
@@ -29,6 +31,16 @@ public class AnimationEventManager : MonoBehaviour
     {
         AudioClip clip = (AudioClip)Resources.Load("Sound/Va_s/"+clipName);
         musicSource.PlayOneShot(clip);
+    }
+
+    private void SceneChange()
+    {
+        SceneManager.LoadScene(GameManager.NextSceneName);
+    }
+
+    private void TriggerDialogue()
+    {
+        DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
     }
 
 }

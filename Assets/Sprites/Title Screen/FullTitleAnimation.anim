@@ -1727,7 +1727,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 3.0166667
+  - time: 3.0333333
     functionName: PlaySfx
     data: Title Screen/Arrow 2
     objectReferenceParameter: {fileID: 0}
