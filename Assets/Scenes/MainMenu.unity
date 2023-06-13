@@ -311,7 +311,6 @@ GameObject:
   m_Component:
   - component: {fileID: 328909633}
   - component: {fileID: 328909634}
-  - component: {fileID: 328909635}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -346,19 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 159932fcbee6d4026b42acdea668c65f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &328909635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328909632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 958663c7cd94749868a8bfcb6ca6079e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crosshair: {fileID: 2800000, guid: d56466e2aaae14dcca68b31d3054cead, type: 3}
+  soundManager: {fileID: 106286305}
 --- !u!1 &359776413
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +646,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e589f1a4884ec4298a19d9537abb8dca, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.7
   m_Pitch: 1
@@ -1192,9 +1179,9 @@ MonoBehaviour:
             m_StringArgument: StartMusicFade
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1042650000}
+        - m_Target: {fileID: 1689812062}
           m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: 
+          m_MethodName: SetTrigger
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1204,25 +1191,13 @@ MonoBehaviour:
             m_StringArgument: StartMusicFade
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1689812060}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: 
+        - m_Target: {fileID: 106286305}
+          m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+          m_MethodName: PlayEffect
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 8300000, guid: e589f1a4884ec4298a19d9537abb8dca, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 769355998}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 

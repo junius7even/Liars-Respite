@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public static string NextSceneName;
     private static GameManager _instance;
 
+    public SoundManager soundManager;
+
     public static bool sceneChange;
     // Start is called before the first frame update
     public static GameManager Instance
