@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SceneMusicSource
+  m_Controller: {fileID: 9100000, guid: dc8a644695865482ea6d03311d55a5a6, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 54b1cf69136484216bd7ba8fc41b5fc8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f9bb260a118ab41ee9d1458b4471570e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 5f38af6e672474ffbb2e86d74b1dbb33, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ddfca1bcb48b04de48ddd5929a6425c4, type: 2}

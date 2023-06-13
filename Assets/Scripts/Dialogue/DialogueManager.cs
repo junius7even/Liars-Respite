@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
    [SerializeField] private GameObject portraitGameObject;
    [SerializeField] private GameObject portraitDarkGameObject;
    [SerializeField] private Animator sceneChangeAnimator;
+   [SerializeField] private Animator musicAnimator;
 
    [SerializeField] private TextMeshProUGUI dialogueText;
    [SerializeField] private GameObject[] choices;
@@ -145,8 +146,10 @@ public class DialogueManager : MonoBehaviour
       {
          ExitDialogueMode();
          if (shouldSceneChange)
+         {
             sceneChangeAnimator.SetBool("FadeOut", true);
-
+            musicAnimator.SetBool("StartMusicFade", true);
+         }
       }
    }
 }
