@@ -33,13 +33,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 transform.Translate(Vector3.left * MoveSpeedX * Time.deltaTime);
                 playerAnimator.SetBool("IsWalking", true);
-                gameObject.transform.localScale = new Vector3(-1, 1, 1);
+                gameObject.transform.localScale = new Vector3(1, 1, 1);
             }
             else if (Input.GetKey(KeyCode.D))
             {
                 transform.Translate(-Vector3.left * MoveSpeedX * Time.deltaTime);
                 playerAnimator.SetBool("IsWalking", true);
-                gameObject.transform.localScale = new Vector3(1, 1, 1);
+                gameObject.transform.localScale = new Vector3(-1, 1, 1);
 
             }
             // transform.Translate(new Vector3(moveHorizontal * MoveSpeedX, 0f, moveHorizontal * MoveSpeedZ));

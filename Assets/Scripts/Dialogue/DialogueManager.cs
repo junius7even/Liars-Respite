@@ -34,7 +34,7 @@ public class DialogueManager : MonoBehaviour
    private Story currentStory;
    private static DialogueManager instance;
    
-   private bool dialogueIsPlaying;
+   public static bool dialogueIsPlaying;
    private bool shouldSceneChange = false;
    
    public bool GetDialogueState()
@@ -59,7 +59,10 @@ public class DialogueManager : MonoBehaviour
    {
       // Return if dialogue isn't playing
       if (!dialogueIsPlaying)
+      {
          return;
+      }
+         
       // If players pressed submit button
       if (Input.GetMouseButtonDown(0))
       {
