@@ -29,4 +29,6 @@ We’re still in the testing stages and looking for supporters. With this new eq
 Is that even possible? #Connor
 It will be! Would you like to donate to help change the world? #Elizaveta
 ->main
+    +[Enjoy the party.]
+    (You walk away quietly.)#Connor
 ->DONE

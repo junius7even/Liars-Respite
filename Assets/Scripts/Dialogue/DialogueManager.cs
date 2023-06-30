@@ -33,6 +33,16 @@ public class DialogueManager : MonoBehaviour
    private string portraitsPrefix = "Portraits/";
    private Story currentStory;
    private static DialogueManager instance;
+
+   public static DialogueManager Instance
+   {
+      get
+      {
+         if (!instance)
+            instance = new GameObject().AddComponent<DialogueManager>();
+         return instance;
+      }
+   }
    
    public static bool dialogueIsPlaying;
    private bool shouldSceneChange = false;
@@ -139,7 +149,14 @@ public class DialogueManager : MonoBehaviour
 
          if (currentStory.currentTags.Count > 1)
          {
-            SoundManager.Instance.PlayVoiceOver(currentStory.currentTags[0], currentStory.currentTags[1]);
+            if (currentStory.currentTags[1] == "Evidence")
+            {
+               
+            }
+            else
+            {
+               SoundManager.Instance.PlayVoiceOver(currentStory.currentTags[0], currentStory.currentTags[1]);
+            }
             if (currentStory.currentTags.Count > 2)
                shouldSceneChange = true;
          }

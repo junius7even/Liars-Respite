@@ -29,4 +29,7 @@ Then you must be excited for whatever game Garry has cooked up.#Connor
 No. No I am not.#Rudolph
 I’m much more interested in whatever the old bastard has to reveal…#Rudolph
 Well, enjoy the wine. It’s sure to be a long day.#Connor
+->main
++[Enjoy the party.]
+(You walk away quietly.)#Connor
 ->END

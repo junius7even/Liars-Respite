@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
             SetNextSceneName("ColdOpen");
         else if (SceneManager.GetActiveScene().name == "ColdOpen")
             SetNextSceneName("Party Room");
-        Debug.Log(GameManager.NextSceneName);
+
     }
 
     public void SetNextSceneName(string nextSceneName)

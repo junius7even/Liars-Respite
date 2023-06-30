@@ -29,7 +29,8 @@ public class TriggerDialogue : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-               // DialogueManager.En
+                DialogueManager.Instance.EnterDialogueMode(_dialogueHolder.inkJSON);
+                // DialogueManager.En
             }
         }
     }

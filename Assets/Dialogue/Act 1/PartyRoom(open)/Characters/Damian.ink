@@ -24,5 +24,6 @@ I don't believe you have a leg to stand on when it comes to fashion, Detective. 
 Your jacket looks beyond wrinkled. When was the last time you ironed it? Judging by the stains on your lapel I’d say you need to wash your clothes more often. And while my “rags” are an aesthetic choice, I doubt you dressed with the intention of people thinking you’re a bum. #Damian
 Mmm...#Connor
 ->main
-
++[Enjoy the party.]
+(You walk away quietly.)#Connor
 ->DONE

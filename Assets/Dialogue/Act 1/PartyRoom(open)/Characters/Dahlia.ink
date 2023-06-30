@@ -18,7 +18,7 @@ Have I? I’m sorry. It’s just… these flowers aren’t exactly natural to th
     It was called that because the Spanish that discovered the flower related it to the crucification of Jesus Christ. The three stigma symbolize the three nails that held Jesus to the cross, while the five anthers represent the five wounds that Jesus bore on his body while on the cross. The flower is a passionate display of the suffering that-#Dahlia
     Okay. That’s enough. You’re losing me. They’re weird flowers. Got it.#Connor
     ->main
-    +What do you do? #Connor
+    +[What do you do?] #Connor
     Oh dear. I’m sorry for not introducing myself. My name is Dahlia Lund. I run the Gracious Grove Flower Shope. It’s been in my family for generations.#Dahlia #SorryFor
     That sounds nice, but aren’t you a bit young to be running a shop? #Connor
     Well… I’ve had to take over once my mother fell ill, but we’re getting by. Mr. Faust’s generous purchases for his parties have helped us a lot.#Dahlia
@@ -26,7 +26,7 @@ Have I? I’m sorry. It’s just… these flowers aren’t exactly natural to th
     Yeah… Most of the sales are online, and- Oh, I shouldn’t talk so much about business at a party. Sorry for talking your ear off.#Dahlia
     It’s all right. Maybe I’ll come buy a flower some time.#Connor
     ->main
-    *[Enjoy the party.]
+    +[Enjoy the party.]
     (You walk away quietly.)#Connor
     ->DONE
     

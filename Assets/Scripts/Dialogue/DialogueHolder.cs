@@ -6,7 +6,7 @@ using UnityEngine;
 public class DialogueHolder : MonoBehaviour
 {
     public GameObject dialoguePopup;
-    public TextAsset InkJSON;
+    public TextAsset inkJSON;
     
     // Start is called before the first frame update
     private void Update()
