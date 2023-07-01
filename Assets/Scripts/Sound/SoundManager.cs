@@ -27,6 +27,15 @@ public class SoundManager : MonoBehaviour
         _musicSource.clip = clip;
         _musicSource.Play();
     }
+
+    public void PlayAmbience(string clipName, string currentContext)
+    {
+        AudioClip clip = Resources.Load<AudioClip>($"Sound/Music/{currentContext}/{clipName}");
+        Debug.Log($"Sound/Music/{currentContext}/{clipName}");
+        Debug.Log(clip);
+        _musicSource.clip = clip;
+        _musicSource.Play();
+    }
     
     public void PlayEffect(AudioClip clip)
     {

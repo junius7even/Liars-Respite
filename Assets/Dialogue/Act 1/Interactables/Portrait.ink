@@ -1,2 +1,2 @@
-+[Of course there's a portrait of himself.]#Connor
+None other than Garry himself.#Connor
 ->DONE

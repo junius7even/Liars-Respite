@@ -16,6 +16,7 @@ public class DialogueHolder : MonoBehaviour
     public void ShowDialoguePopup()
     {
         dialoguePopup.SetActive(true);
+        Debug.Log("Is set to true.");
     }
 
     public void DisableDialoguePopup()

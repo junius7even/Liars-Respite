@@ -7,7 +7,7 @@ Multiple exotic plants, a mahogony table, and a garish ice sculpture of the host
 (The only one impressed by the display is Garry and the woman with strange glasses.)#Connor
 The rest of the partygoers have an attitude more suited for a funeral.)#Connor
 (I clear my throat, eventually Garry tearing his gaze away from his cold counterpart to notice me.)#Connor
-Mr. Greener! Welcome! The most important piece of the game reveals himself! #Garry
+Mr. Greener! Welcome! The most important piece of the game reveals himself! #Garry #TheMostImportant
 Game? #Connor
 I’m so excited for whatever you have planned, Mr. Faust! #Elizaveta
 The sooner this ends the better... #Damian

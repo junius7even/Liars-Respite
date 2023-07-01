@@ -1,5 +1,6 @@
 -> main
 === main ===
+How can I be of assistance, detective? #Elizaveta #HowCanIBeOf
 +[How do you know Garry Faust?]#Connor
 Garry Faust is a genius philanthropist of our time! Who wouldn’t know about him?#Elizaveta
 He started off small in his basement making games until his stint into trading card games exploded! Manic Machinations took the world by storm and became a worldwide hit.#Elizaveta
@@ -22,7 +23,7 @@ I’m sure that’s how it looks to the uneducated, but his career is what peopl
 I’d rather sell my soul to Satan.#Connor
 ->main
 +[What do you do?]#Connor
-How rude of me to not introduce myself. I am Elizaveta Lovanski, CEO and head researcher at Cerebro Research. Here’s my business card.#Elizaveta
+How rude of me to not introduce myself. I am Elizaveta Lovanski, CEO and head researcher at Cerebro Research. Here’s my business card.#Elizaveta #HowRudeOfMe
 (She hands me a card that’s as loud and in your face as she is. I put the card in my back pocket to forget about.)
 That sounds important. I’ve never heard of Cerebro Research before.#Connor
 We’re still in the testing stages and looking for supporters. With this new equipment my company is making and Garry Faust’s funds, no one will have to worry about neurological diseases ever again.#Elizaveta

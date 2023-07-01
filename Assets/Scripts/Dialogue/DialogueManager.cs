@@ -6,6 +6,7 @@ using UnityEngine;
 using Ink.Runtime;
 using Unity.VisualScripting;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class DialogueManager : MonoBehaviour
 
    [SerializeField] private TextMeshProUGUI dialogueText;
    [SerializeField] private GameObject[] choices;
-   [SerializeField] TextMeshProUGUI[] choicesText;
+   [SerializeField] public TextMeshProUGUI[] choicesText;
 
    [SerializeField]
    private Image portraitImage;
@@ -63,6 +64,15 @@ public class DialogueManager : MonoBehaviour
       namePanel.SetActive(false);
       nameText.text = "";
       underNameText.text = "";
+
+      //int index = 0;
+     //Debug.Log("Length: "+choices.Length);
+      //foreach (GameObject choice in choices)
+      //{
+      //   Debug.Log(index);
+      //   choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>(true);
+      //   index++;
+     // }
    }
 
    private void Update()
@@ -95,6 +105,40 @@ public class DialogueManager : MonoBehaviour
       return instance;
    }
 
+   private void DisplayChoices()
+   {
+      List<Choice> currentChoices = currentStory.currentChoices;
+      if (currentChoices.Count > choices.Length)
+      {
+         // Defensive check to make sure our UI can support the number of choices coming in.
+         Debug.LogError("More choices were given than the UI can support. Number of choices given: " + currentChoices.Count);
+      }
+      Debug.Log(currentChoices.Count);
+      int index = 0;
+      // enable and initialize the choices up to the amount of current choices for this line of dialogue
+      foreach (Choice choice in currentChoices)
+      {
+         choices[index].gameObject.SetActive(true);
+         choicesText[index].text = choice.text;
+         index++;
+      }
+
+      for (int i = index; i < choices.Length; i++)
+      {
+         choices[i].gameObject.SetActive(false);
+      }
+      
+   }
+   
+   private IEnumerator SelectFirstChoices()
+   {
+      // Event system requires we clear it first, then wait
+      // For at least one frame before we set the current selected object
+         EventSystem.current.SetSelectedGameObject(null);
+         yield return new WaitForEndOfFrame();
+         EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+   }
+
    public void EnterDialogueMode(TextAsset inkJSON)
    {
       Debug.Log("I've triggered dialogue");
@@ -122,7 +166,8 @@ public class DialogueManager : MonoBehaviour
    {
       if (currentStory.canContinue)
       {
-         currentStory.Continue();
+         dialogueText.text = currentStory.Continue();
+         DisplayChoices();
          Debug.Log("Can continue!");
          // Debug.Log(currentStory.Continue());
          if (currentStory.currentTags[0] == "None")
@@ -160,7 +205,6 @@ public class DialogueManager : MonoBehaviour
             if (currentStory.currentTags.Count > 2)
                shouldSceneChange = true;
          }
-         dialogueText.text = currentStory.currentText;
       }
       else
       {
@@ -171,5 +215,10 @@ public class DialogueManager : MonoBehaviour
             musicAnimator.SetBool("StartMusicFade", true);
          }
       }
+   }
+
+   public void MakeChoie(int choiceIndex)
+   {
+      currentStory.ChooseChoiceIndex(choiceIndex);
    }
 }

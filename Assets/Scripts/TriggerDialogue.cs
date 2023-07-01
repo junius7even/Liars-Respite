@@ -8,7 +8,7 @@ public class TriggerDialogue : MonoBehaviour
     Ray ray;
     RaycastHit hit;
     private DialogueHolder _dialogueHolder;
-    void Update()
+    void LateUpdate()
     {
         if (DialogueManager.dialogueIsPlaying)
             return;
@@ -30,7 +30,6 @@ public class TriggerDialogue : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 DialogueManager.Instance.EnterDialogueMode(_dialogueHolder.inkJSON);
-                // DialogueManager.En
             }
         }
     }

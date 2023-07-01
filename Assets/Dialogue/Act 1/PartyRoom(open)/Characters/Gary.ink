@@ -1,6 +1,6 @@
 ->main
 === main ===
-Why hello there detective.#Garry
+Welcome to the party, detective.#Garry #Welcome
 +[Why the sudden invite?]#Connor
 What’s wrong with a little spontaneity, Mr. Greener? Isn’t surprise the spice of life?#Garry
 “A hawk bursting in my room at 3 in the morning isn’t what I would call “a little spontaneity”, Garry.#Connor
