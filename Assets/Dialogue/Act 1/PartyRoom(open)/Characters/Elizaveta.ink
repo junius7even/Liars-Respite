@@ -1,7 +1,7 @@
 -> main
 === main ===
 How can I be of assistance, detective? #Elizaveta #HowCanIBeOf
-+[How do you know Garry Faust?]#Connor
++[How do you know Garry Faust?]
 Garry Faust is a genius philanthropist of our time! Who wouldn’t know about him?#Elizaveta
 He started off small in his basement making games until his stint into trading card games exploded! Manic Machinations took the world by storm and became a worldwide hit.#Elizaveta
 Everything after that is history.#Elizaveta
@@ -22,7 +22,7 @@ Looks to me like an 85 year old man that will break a hip once he moves.#Connor
 I’m sure that’s how it looks to the uneducated, but his career is what people dream of achiving. He could sell your own car to you, that’s how good he is!#Elizaveta
 I’d rather sell my soul to Satan.#Connor
 ->main
-+[What do you do?]#Connor
++[What do you do?]
 How rude of me to not introduce myself. I am Elizaveta Lovanski, CEO and head researcher at Cerebro Research. Here’s my business card.#Elizaveta #HowRudeOfMe
 (She hands me a card that’s as loud and in your face as she is. I put the card in my back pocket to forget about.)
 That sounds important. I’ve never heard of Cerebro Research before.#Connor
@@ -32,4 +32,4 @@ It will be! Would you like to donate to help change the world? #Elizaveta
 ->main
     +[Enjoy the party.]
     (You walk away quietly.)#Connor
-->DONE
+->END

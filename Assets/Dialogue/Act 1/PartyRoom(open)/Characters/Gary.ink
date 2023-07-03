@@ -1,7 +1,7 @@
 ->main
 === main ===
 Welcome to the party, detective.#Garry #Welcome
-+[Why the sudden invite?]#Connor
++[Why the sudden invite?]
 What’s wrong with a little spontaneity, Mr. Greener? Isn’t surprise the spice of life?#Garry
 “A hawk bursting in my room at 3 in the morning isn’t what I would call “a little spontaneity”, Garry.#Connor
 You’re too serious, Connor. It’s all in good fun, What’s wrong with an old man celebrating with his close friends?#Garry
@@ -28,7 +28,7 @@ I’d love to call you for a case, but you always seem to know the answer before
 I’m just a damn good detective.#Connor
 Haha! A damn good detective indeed! I’m very excited to see what you do for our game, Mr. Greener.#Garry
 ->main
-+[You didn't skimp on the decoration.]#Connor
++[You didn't skimp on the decoration.]
 Of course. The last thing you want to do is ignore the details. A party would be boring with just people, a table, and drinks. What drives people is the extravagance. The showmanship!#Garry
 Sounds to me like an excuse to show off.#Connor    
 Oh please. What’s wrong with a little self-indulgence from the host?#Garry
@@ -40,4 +40,4 @@ Hahaha! Right. Do enjoy the party, Mr. Greener.#Garry
 ->main
 +[Enjoy the party.]
 (You walk away quietly.)#Connor
-->DONE
+->END

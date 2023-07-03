@@ -1,7 +1,7 @@
 ->main
 ===main===
 Detective#Damian
-+[How do you know Garry Fuast?]#Connor
++[How do you know Garry Fuast?]
 He saw my designs online and got in contact with me. He and his friends like to have me create their… personal collections.#Damian
 That's interesting. What kind of clothes are those? #Connor
 The personal kind #Damian
@@ -14,7 +14,7 @@ The kind you wear. #Damian
 Great talk, buddy. #Connor
 Mmm...#Damian
 ->main
-+[You look snazzy].#Connor
++[You look snazzy].
 Mmm... #Damian
 Did you make it yourself? #Connor
 Is the umbrella part of the look or is it going to rain? #Connor
@@ -26,4 +26,4 @@ Mmm...#Connor
 ->main
 +[Enjoy the party.]
 (You walk away quietly.)#Connor
-->DONE
+->END

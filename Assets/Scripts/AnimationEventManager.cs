@@ -38,7 +38,7 @@ public class AnimationEventManager : MonoBehaviour
         SceneManager.LoadScene(GameManager.NextSceneName);
     }
 
-    private void TriggerDialogue()
+    private void TriggerSceneDialogue()
     {
         DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
     }

@@ -1,7 +1,7 @@
 ->main
 === main ===
 You need something, Mr.Detective?#Rudolph #YouNeedSomething
-+[You look familiar.]#Connor
++[You look familiar.]
 I would hope so! I've made many appearances on TV for my campaign.#Rudolph
 I think I remember seeing a poli-#Connor
 Come on now. That’s all in the past!#Rudolph
@@ -10,7 +10,7 @@ I believe we started off on the wrong foot. My name is Rudolph Raggabound. You�
 Connor Greener, P.I. I’d Ragga not vote for a Dolph. #Connor
 ...Charming#Rudolph
 ->main
-+[How do you know Gary Faust?]#COnnor
++[How do you know Gary Faust?]
 He’s my father’s drinking buddy. #Rudolph
 I’ve met him at a few social gatherings and we got to talking and found we agree a lot on what needs to be done for this country.#Rudolph
 Is that right? Does Garry have the attention span for politics?#Connor
@@ -19,7 +19,7 @@ But I believe his profoundly childish sensibilities can help lead our country's 
 Why not get an actual child for your running mate?#Connor
 Children don’t have deep pockets.#Rudolph
 ->main
-+[What do you think of this party?]#Connor
++[What do you think of this party?]
 It is certainly a party Mr.Fuast would host.#Rudolph
 Have you been to many of his parties? #Connor
 Usually once every other month. #Rudolph
