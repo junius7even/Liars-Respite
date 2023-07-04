@@ -31,6 +31,8 @@ public class SoundManager : MonoBehaviour
     public void PlayAmbience(string clipName, string currentContext)
     {
         AudioClip clip = Resources.Load<AudioClip>($"Sound/Music/{currentContext}/{clipName}");
+        Debug.Log("PlayAmbience has been called: " + (clip == null));
+
         Debug.Log($"Sound/Music/{currentContext}/{clipName}");
         Debug.Log(clip);
         _musicSource.clip = clip;

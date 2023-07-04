@@ -21,4 +21,5 @@ You’re guess is as good as mine. I looked outside and didn’t saw a whole lot
 It looks like we’re stuck in another one of the old bastard’s play houses until we finish his stupid game.#Rudolph
 ->main
 +[(I better get to work.)]
+(You leave quietly.)
 ->END

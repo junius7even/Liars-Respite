@@ -14,7 +14,7 @@ public class DialogueManager : MonoBehaviour
    [SerializeField] GameObject dialoguePanel;
    [SerializeField] private GameObject namePanel;
    [SerializeField] private GameObject portraitsGameObject;
-   [SerializeField] private Animator sceneChangeAnimator;
+   [SerializeField] public Animator sceneChangeAnimator;
    [SerializeField] private Animator musicAnimator;
 
    [SerializeField] private TextMeshProUGUI dialogueText;
@@ -55,7 +55,7 @@ public class DialogueManager : MonoBehaviour
    }
    
    public static bool dialogueIsPlaying;
-   private bool shouldSceneChange = false;
+   public bool shouldSceneChange = false;
    
    public bool GetDialogueState()
    {
@@ -184,6 +184,11 @@ public class DialogueManager : MonoBehaviour
       editingTextField = false;
       SetDialogueAnimatorFadeOut(true);
       SetDialogueAnimatorFadeIn(false);
+      if (shouldSceneChange)
+      {
+         sceneChangeAnimator.SetBool("FadeOut", true);
+         musicAnimator.SetBool("StartMusicFade", true);
+      }
    }
 
    private void ContinueStory()
@@ -195,7 +200,7 @@ public class DialogueManager : MonoBehaviour
          nextStoryLine = currentStory.Continue();
          if (currentSpeaker == "")
             currentSpeaker = currentStory.currentTags[0];
-         Debug.Log(currentSpeaker);
+         // Debug.Log(currentSpeaker);
          // Continue the dialogue only after the animation has played
          nextSpeaker = currentStory.currentTags[0];
          
@@ -211,26 +216,19 @@ public class DialogueManager : MonoBehaviour
       else
       {
          ExitDialogueMode();
-         if (shouldSceneChange)
-         {
-            sceneChangeAnimator.SetBool("FadeOut", true);
-            musicAnimator.SetBool("StartMusicFade", true);
-            GameManager.Instance.LoadNextScene();
-         }
       }
    }
 
    private void displayDialoguePanelWithFadeIn()
    {
-      Debug.Log("i'm called yes the displaywithfadein");
       SetDialogueAnimatorFadeOut(false);
       displayDialoguePanel();
       SetDialogueAnimatorFadeIn(true);
    }
-   
+
    private void displayDialoguePanel()
    {
-      Debug.Log("Can continue!");
+      //Debug.Log("Can continue!");
       dialogueText.text = nextStoryLine;
       // Debug.Log(currentStory.Continue());
       if (nextSpeaker == "None" || nextSpeaker == "AdvanceStory" || nextSpeaker == "SceneChange" || nextSpeaker == "Code" || nextSpeaker == "Dresser2")
@@ -244,14 +242,16 @@ public class DialogueManager : MonoBehaviour
          if (nextSpeaker == "AdvanceStory")
             GameManager.Instance.TriggerStorySequence();
          if (nextSpeaker == "SceneChange")
+         {
             shouldSceneChange = true;
+            //Debug.Log("I've been sceneChanged magic");
+            //Debug.Log(shouldSceneChange);
+         }
          if (nextSpeaker == "Code")
          {
             editingTextField = true;
             inputField.SetActive(true);
          }
-
-         
       }
       else
       {

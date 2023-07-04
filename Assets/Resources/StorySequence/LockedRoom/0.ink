@@ -12,3 +12,4 @@ We could have. But the detective is the one who’s supposed to solve the puzzle
 How thoughtful...#Connor
 Come on. Let's get out of here already.#Connor
 Connor swipes the key from Rudolph and uses it on the door. The door opens to reveal the grand hall.#SceneChange
+->END

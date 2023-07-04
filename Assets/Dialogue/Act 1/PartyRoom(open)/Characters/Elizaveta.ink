@@ -16,7 +16,7 @@ That sounds strangely altruistic for the old man. What exactly is your start up#
 Well… it’s still in bet- no. Alpha. Garry Faust said to keep things close to the chest. But it will revolutionize modern medicine!#Elizaveta
 Color me suspicious.#Connor
 ->main
-+[You've been staring at Garry for a while]#Connor
++[You've been staring at Garry for a while]
 Straight, sleek posture, tastefully styled hair, an award winning smile, and a classy, dignified aura. He is the dictionary’s go to example of a perfect businessman!#Elizaveta
 Looks to me like an 85 year old man that will break a hip once he moves.#Connor
 I’m sure that’s how it looks to the uneducated, but his career is what people dream of achiving. He could sell your own car to you, that’s how good he is!#Elizaveta

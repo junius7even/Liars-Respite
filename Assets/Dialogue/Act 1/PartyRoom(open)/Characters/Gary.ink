@@ -23,7 +23,7 @@ Mmm.#Damian
 And I can’t forget about Dahlia Lund. She is a fantastic florist and a spectacular saleswoman.#Garry
 Thank you.#Dahlia
 And lastly, the most important piece on the game board, you. Connor Greener, Private Investigator. Famed cat finder, prover of adultery, and snooper into other people's privacy.#Garry
-Hey! I do more important things that that. It’s just there’s been a lull is clients recently.#Connor
+Hey! I do more important things than that. It’s just there’s been a lull is clients recently.#Connor
 I’d love to call you for a case, but you always seem to know the answer before you even walk into the room. That’s not very fun.#Garry
 I’m just a damn good detective.#Connor
 Haha! A damn good detective indeed! I’m very excited to see what you do for our game, Mr. Greener.#Garry

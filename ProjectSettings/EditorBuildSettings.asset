@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Studio.unity
     guid: 52e45c61ec35f43c0937a02dcc09fc64
+  - enabled: 1
+    path: Assets/Scenes/FutureUpdate.unity
+    guid: dc833cccd46ce1342ae5adfde3eaf243
   m_configObjects: {}

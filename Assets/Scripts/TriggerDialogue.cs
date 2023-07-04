@@ -10,7 +10,7 @@ public class TriggerDialogue : MonoBehaviour
     private DialogueHolder _dialogueHolder;
     void LateUpdate()
     {
-        if (DialogueManager.dialogueIsPlaying)
+        if (DialogueManager.dialogueIsPlaying || (DialogueManager.Instance.sceneChangeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1))
             return;
         
         int layerMask = LayerMask.GetMask("Interactable");
@@ -21,15 +21,18 @@ public class TriggerDialogue : MonoBehaviour
         {
             Debug.Log("hit the thing: " + hit.collider.name);
             _dialogueHolder = hit.collider.GetComponentInParent<DialogueHolder>();
+            Transform collidedObjectPosition = hit.collider.transform;
+            float distanceBetweenPlayerAndObject =
+                Vector3.Distance(transform.position, collidedObjectPosition.position);
+            Debug.Log("distance: "+ distanceBetweenPlayerAndObject);
             // If a dialogue holder is found on the racyasted object, then activate the popup
-            if (_dialogueHolder)
+            if (_dialogueHolder && distanceBetweenPlayerAndObject <= 2.0f)
             {
                 _dialogueHolder.ShowDialoguePopup();
-            }
-
-            if (Input.GetMouseButtonDown(0))
-            {
-                DialogueManager.Instance.EnterDialogueMode(_dialogueHolder.inkJSON);
+                if (Input.GetMouseButtonDown(0))
+                {
+                    DialogueManager.Instance.EnterDialogueMode(_dialogueHolder.inkJSON);
+                }
             }
         }
     }

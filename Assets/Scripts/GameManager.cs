@@ -68,11 +68,16 @@ public class GameManager : MonoBehaviour
     }
 
     public void LoadNextScene()
-    {
+    {        
+        AudioClip clip = Resources.Load<AudioClip>($"Sound/Music/{NextSceneName}/Ambience");
+        SoundManager.Instance.PlayAmbience("Ambience", NextSceneName);
+        SoundManager.Instance.PlayMusic(clip);
         SceneManager.LoadScene(NextSceneName);
+        Debug.Log("NextSceneName: " + NextSceneName);
         CurrentStorySequence = 0;
         TextAsset storySequence = Resources.Load<TextAsset>(storyPrefix + SceneManager.GetActiveScene().name + "/" + CurrentStorySequence); //"StorySequence/PartyRoom/0"
         DialogueManager.Instance.EnterDialogueMode(storySequence);
+        SoundManager.Instance.PlayAmbience("Ambience", NextSceneName);
     }
 
     public void TriggerStorySequence()

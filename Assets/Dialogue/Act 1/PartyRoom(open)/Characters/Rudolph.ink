@@ -6,7 +6,7 @@ I would hope so! I've made many appearances on TV for my campaign.#Rudolph
 I think I remember seeing a poli-#Connor
 Come on now. That’s all in the past!#Rudolph
 And I was proven innocent in a court of law.#Rudolph
-I believe we started off on the wrong foot. My name is Rudolph Raggabound. You’re Bound to have a great president with Ru at the seat!#I believe...
+I believe we started off on the wrong foot. My name is Rudolph Raggabound. You’re Bound to have a great president with Ru at the seat!#Rudolph #I believe...
 Connor Greener, P.I. I’d Ragga not vote for a Dolph. #Connor
 ...Charming#Rudolph
 ->main

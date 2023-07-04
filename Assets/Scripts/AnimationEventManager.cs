@@ -35,7 +35,7 @@ public class AnimationEventManager : MonoBehaviour
 
     private void SceneChange()
     {
-        SceneManager.LoadScene(GameManager.NextSceneName);
+        GameManager.Instance.LoadNextScene();
     }
 
     private void TriggerSceneDialogue()
