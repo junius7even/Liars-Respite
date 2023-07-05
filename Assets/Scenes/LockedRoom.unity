@@ -6366,8 +6366,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 18.601522, y: 4.271601, z: 1.0773996}
-  m_Center: {x: -0.96980023, y: -7.6575694, z: 0.43869978}
+  m_Size: {x: 18.601522, y: 4.2716002, z: 0.88540566}
+  m_Center: {x: -0.96980023, y: -7.6575694, z: 0.3427028}
 --- !u!212 &1622194379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8125,6 +8125,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 675336269602894604, guid: 8efa69cc368269c418772055392aebae, type: 3}
+      propertyPath: inkJSON
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2824709201518114374, guid: 8efa69cc368269c418772055392aebae, type: 3}
       propertyPath: objectToActivate
       value: 
@@ -8133,6 +8137,10 @@ PrefabInstance:
       propertyPath: dresser
       value: 
       objectReference: {fileID: 266671656}
+    - target: {fileID: 3105954323719324357, guid: 8efa69cc368269c418772055392aebae, type: 3}
+      propertyPath: noteObject
+      value: 
+      objectReference: {fileID: 525451325}
     - target: {fileID: 3692700064809886247, guid: 8efa69cc368269c418772055392aebae, type: 3}
       propertyPath: m_RootOrder
       value: 10

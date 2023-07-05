@@ -29,6 +29,8 @@ public class DialogueManager : MonoBehaviour
    [SerializeField]
    private Image portraitBackingImage;
 
+   [SerializeField] GameObject noteObject;
+
 
    [SerializeField] private TextMeshProUGUI nameText;
    [SerializeField] private TextMeshProUGUI underNameText;
@@ -72,8 +74,9 @@ public class DialogueManager : MonoBehaviour
       underNameText.text = "";
    }
 
-   private void Update()
+   private void LateUpdate()
    {
+      Debug.Log("Dialogue playing" + dialogueIsPlaying);
       bool animationFinished = (((portraitsAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)|| !portraitsGameObject.activeInHierarchy)&&
                                 (dialogueBoxAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1));
       // Return if dialogue isn't playing
@@ -98,9 +101,10 @@ public class DialogueManager : MonoBehaviour
          }
          else if(dialogueBoxAnimator.GetBool("FadeIn") && currentClipName == "TextBoxExisting") // If the panel finished fading in, it will continue to exist
             SetDialogueAnimatorFadeIn(false);
+         if (Input.GetKeyDown(KeyCode.Mouse0) && currentClipName == "TextBoxExisting"  && currentClipName != "TextBoxDefault" && !displayingChoices && !editingTextField)
+            ContinueStory();
       }
-      if (animationFinished && Input.GetKeyDown(KeyCode.Mouse0) && currentClipName == "TextBoxExisting" && !displayingChoices && !editingTextField)
-         ContinueStory();
+      
    }
 
    private void Awake()
@@ -252,11 +256,15 @@ public class DialogueManager : MonoBehaviour
             editingTextField = true;
             inputField.SetActive(true);
          }
+         
       }
       else
       {
          if (nextSpeaker == "note")
-            GameManager.Instance.SetActiveObject();
+         {
+            Debug.Log("Note triggred");
+            noteObject.SetActive(true);
+         }
          namePanel.SetActive(true);
          nameText.text = currentStory.currentTags[0];
          underNameText.text = currentStory.currentTags[0];

@@ -19,12 +19,12 @@ public class TriggerDialogue : MonoBehaviour
         // Specifying layer that the ray cast hits
         if (Physics.Raycast (ray, out hit, Mathf.Infinity, layerMask))
         {
-            Debug.Log("hit the thing: " + hit.collider.name);
+            //Debug.Log("hit the thing: " + hit.collider.name);
             _dialogueHolder = hit.collider.GetComponentInParent<DialogueHolder>();
             Transform collidedObjectPosition = hit.collider.transform;
             float distanceBetweenPlayerAndObject =
                 Vector3.Distance(transform.position, collidedObjectPosition.position);
-            Debug.Log("distance: "+ distanceBetweenPlayerAndObject);
+            //Debug.Log("distance: "+ distanceBetweenPlayerAndObject);
             // If a dialogue holder is found on the racyasted object, then activate the popup
             if (_dialogueHolder && distanceBetweenPlayerAndObject <= 2.0f)
             {
