@@ -8128,7 +8128,7 @@ PrefabInstance:
     - target: {fileID: 675336269602894604, guid: 8efa69cc368269c418772055392aebae, type: 3}
       propertyPath: inkJSON
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4900000, guid: b455a7d7d9d522541b3aa5ddc4487ee3, type: 3}
     - target: {fileID: 2824709201518114374, guid: 8efa69cc368269c418772055392aebae, type: 3}
       propertyPath: objectToActivate
       value: 
