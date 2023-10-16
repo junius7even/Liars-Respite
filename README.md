@@ -1,6 +1,6 @@
 # Summary
 This is a story focused game submitted for the Adventure Jam 2023
-![image](https://github.com/junius7even/Liars-Respite/assets/33168288/73188f8b-2505-4464-bb73-de6d7ee70cfa)
+![ezgif-1-afc9847bac](https://github.com/junius7even/Liars-Respite/assets/33168288/cbfe0ecc-6bad-40c8-92f3-072ef2900739)
 For a demonstration and general feel for the game please click on the link below! 
 https://fweamy.itch.io/liars-respite
 
